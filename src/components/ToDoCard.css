@@ -1,0 +1,31 @@
+.card {
+  width: 25rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: RGBA(245, 108, 45, 0.3);
+  border-radius: 15px;
+  border: 2px solid #43a819;
+  padding: 1rem 2rem;
+}
+
+/* space between the header, body and footer on the card */
+.card > div:nth-child(2) {
+  padding: 1rem 0;
+}
+
+.card-section {
+  display: flex;
+}
+
+#card-header {
+  font-size: x-large;
+  font-weight: bold;
+  justify-content: space-between;
+}
+
+#card-body {
+}
+
+#card-footer {
+}
