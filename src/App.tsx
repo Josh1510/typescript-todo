@@ -1,13 +1,22 @@
 import React from 'react';
 
 import './App.css';
+import ToDoCard from './components/ToDoCard';
 
 function App() {
   return (
     <div className="App">
-      <header>To Do List</header>
+      <header>
+        <div>DO ME!</div>
+        <div>
+          <button>Add Item</button>
+        </div>
+      </header>
       <body>
-        <div>To Do</div>
+        <div>
+          <div>To Do</div>
+          <ToDoCard />
+        </div>
         <div>Completed</div>
       </body>
       <footer>
