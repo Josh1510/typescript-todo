@@ -1,0 +1,11 @@
+header {
+  font-size: xx-large;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+header > div {
+  padding: 0 2rem;
+}
