@@ -4,6 +4,9 @@ import './App.css';
 import ToDoCard from './components/ToDoCard';
 
 function App() {
+  let title = 'hello';
+  const date: Date = new Date();
+
   return (
     <div className="App">
       <header>
@@ -15,7 +18,7 @@ function App() {
       <body>
         <div>
           <div>To Do</div>
-          <ToDoCard />
+          <ToDoCard title={title} date={date} />
         </div>
         <div>Completed</div>
       </body>
