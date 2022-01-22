@@ -1,12 +1,27 @@
 import React from 'react';
 import './ToDoCard.css';
+import dateFormat from '../utils';
 
-const ToDoCard = () => {
+type props = {
+  title: string;
+  date: Date;
+};
+
+const ToDoCard = ({ title, date }: props) => {
+  let temp = 'short';
+
   return (
     <div className="card">
       <div id="card-header" className="card-section">
-        <div id="title">Title</div>
-        <div id="due-date">Due</div>
+        <div id="title">{title}</div>
+
+        <div id="due-date">
+          {`Due: ${date.toLocaleString('en-GB', {
+            dateStyle: 'short',
+            timeStyle: 'short',
+            hour12: true,
+          })}`}
+        </div>
       </div>
       <div id="card-body" className="card-section">
         <div id="desription">Description</div>
